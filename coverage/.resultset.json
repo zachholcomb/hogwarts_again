@@ -218,9 +218,6 @@
       "/Users/meghanstang/turing-staff/2module/assessments/hogwarts_again/app/models/professor.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
           null,
           null
         ]
@@ -248,8 +245,7 @@
       "/Users/meghanstang/turing-staff/2module/assessments/hogwarts_again/app/models/professor_student.rb": {
         "lines": [
           1,
-          1,
-          1,
+          null,
           null
         ]
       },
@@ -276,13 +272,11 @@
       "/Users/meghanstang/turing-staff/2module/assessments/hogwarts_again/app/models/student.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1585277647
+    "timestamp": 1585277960
   }
 }

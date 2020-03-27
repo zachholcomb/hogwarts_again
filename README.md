@@ -6,4 +6,4 @@
   - bundle install
   - rails db:{create,migrate,seed}
 
-When you run rspec, you should have 12 passing tests. 
+When you run rspec, you should have 12 failing tests to start.  
