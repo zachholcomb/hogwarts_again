@@ -4,6 +4,6 @@ class Professor <ApplicationRecord
   has_many :students, through: :professor_students
 
   def average_student_age
-    require "pry"; binding.pry
+    students.select(:age)
   end
 end
