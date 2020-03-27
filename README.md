@@ -1,6 +1,7 @@
 # Hogwarts Again
 
 ## Setup instructions:
+  - Fork this repo
   - git clone <repo>
   - cd <repo_name>
   - bundle install
