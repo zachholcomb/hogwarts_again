@@ -32,5 +32,9 @@ RSpec.describe "Students index page" do
     expect(page).to have_content("Neville Longbottom")
     expect(page).to have_content("Hermione Granger")
     expect(page).to have_content("Luna Lovegood")
+
+    expect(page).to have_content("Neville Longbottom: 2")
+    expect(page).to have_content("Hermione Granger: 1")
+    expect(page).to have_content("Luna Lovegood: 2")
   end
 end
