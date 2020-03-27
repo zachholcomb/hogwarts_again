@@ -1,24 +1,9 @@
-# README
+# Hogwarts Again
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup instructions: 
+  - git clone <repo>
+  - cd <repo_name>
+  - bundle install
+  - rails db:{create,migrate,seed}
+  
+When you run rspec, you should have 3 errors to start. 
