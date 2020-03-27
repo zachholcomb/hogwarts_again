@@ -23,3 +23,12 @@ RSpec.describe "Professors show page" do
     expect(page).to have_content("Luna Lovegood")
   end
 end
+
+
+# ```
+# User Story 4 of 4
+# As a visitor,
+# When I visit '/professors/:id'
+# I see the average age of all students for that professor.
+# (e.g. "Average Age: 14.5")
+# ```
