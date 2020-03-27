@@ -1,6 +1,6 @@
 <h1>Students</h1>
 <% @students.each do |student| %>
   <ul>
-    <li>"<%= student.name %> : "</li>
+    <li>"<%= student.name %>: <%= student.professor_count %>"</li>
   </ul>
 <% end %>
