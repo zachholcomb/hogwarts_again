@@ -1,31 +1,25 @@
 require 'rails_helper'
 
-RSpec.dsescribe "Professors show page" do
+RSpec.describe "Professors show page" do
   it "can show a list of that professors students" do
-    snape = Professor.create!(name: "Severus Snape",
-            age: 65,
-            specialty: "Potions")
     mcgonagall = Professor.create!(name: "Minerva McGonagall",
                                   age: 204,
                                   specialty: "Transfiguration")
 
-    snape.students.create!(name: "Draco Malfoy",
-                                      age: 16,
-                                      house: "Slytherin")
-    mconagall.students.create!(name: "Neville Longbottom",
+    mcgonagall.students.create!(name: "Neville Longbottom",
                                             age: 16,
                                             house: "Gryffindor")
 
-    visit "/professors/#{mconagall.id}"
+    mcgonagall.students.create!(name: "Hermione Granger",
+                                            age: 16,
+                                            house: "Gryffindor")
+
+    mcgonagall.students.create!(name: "Luna Lovegood",
+                                            age: 16,
+                                            house: "Gryffindor")
+    visit "/professors/#{mcgonagall.id}"
+    expect(page).to have_content("Neville Longbottom")
+    expect(page).to have_content("Hermione Granger")
+    expect(page).to have_content("Luna Lovegood")
   end
 end
-
-#
-# ```
-# User Story 2 of 4
-# As a visitor,
-# When I visit '/professors/:id'
-# I see a list of the names of the students the professors have.
-# (e.g. "Neville Longbottom"
-#       "Hermione Granger"
-#       "Luna Lovegood")
